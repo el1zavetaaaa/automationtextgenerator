@@ -3,9 +3,9 @@ package automationtextgenerator;
 public class SpecializedTextGenerator extends automationtextgenerator.TextGenerator {
     private String dear;
     private String memberOfFamily;
-    private String comma;
+    private char comma;
 
-    public SpecializedTextGenerator(String exclamationMark, String mainText, String dear, String memberOfFamily, String comma) {
+    public SpecializedTextGenerator(char exclamationMark, String mainText, String dear, String memberOfFamily, char comma) {
         super(exclamationMark, mainText);
         this.dear = dear;
         this.memberOfFamily = memberOfFamily;
@@ -28,16 +28,16 @@ public class SpecializedTextGenerator extends automationtextgenerator.TextGenera
         this.memberOfFamily = memberOfFamily;
     }
 
-    public String getComma() {
+    public char getComma() {
         return comma;
     }
 
-    public void setComma(String comma) {
+    public void setComma(char comma) {
         this.comma = comma;
     }
 
     @Override
     public void show_generatedText() {
-        System.out.println(dear + memberOfFamily + comma + getMainText() + getExclamationMark());
+        System.out.println(dear + " " + memberOfFamily + comma + getMainText() + getExclamationMark());
     }
 }

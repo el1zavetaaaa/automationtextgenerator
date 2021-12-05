@@ -1,19 +1,19 @@
 package automationtextgenerator;
 
 public class TextGenerator {
-    private String exclamationMark;
+    private char exclamationMark;
     private String mainText;
 
-    public TextGenerator(String exclamationMark, String mainText) {
+    public TextGenerator(char exclamationMark, String mainText) {
         this.exclamationMark = exclamationMark;
         this.mainText = mainText;
     }
 
-    public String getExclamationMark() {
+    public char getExclamationMark() {
         return exclamationMark;
     }
 
-    public void setExclamationMark(String exclamationMark) {
+    public void setExclamationMark(char exclamationMark) {
         this.exclamationMark = exclamationMark;
     }
 
