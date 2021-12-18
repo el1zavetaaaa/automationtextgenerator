@@ -142,7 +142,10 @@ public class AutomationTextGenerationMain {
                         + "we congratulate you with a " + getSelectedHoliday + exclamationMark;
 
                 String happyNewYearCongratulationText = "We wish you a Merry Christmas and a Happy New Year" + exclamationMark;
-                String happyNewYearCongratulationTextSecondVariant = "We wish you dreams to come true" + exclamationMark;
+                String happyNewYearCongratulationTextSecondVariant = "We wish you dreams to come true in a "+ getSelectedHoliday + exclamationMark;
+
+                String happyNewYearCongratulationIfChangeText = "We wish you all the best in a " + getSelectedHoliday + exclamationMark;
+                String happyNewYearCongratulationIfChangeTextSecond = "We wish you a "+ getSelectedHoliday + exclamationMark;
 
                 String eightOfMarchCongratulationText = dear + " " + getSelectedMemberOfFamily + " " + comma
                         + "we wish you to be pretty, as always, at " + getSelectedHoliday + exclamationMark;
@@ -161,6 +164,8 @@ public class AutomationTextGenerationMain {
 
                 String[] happyNewYearCongratulationArray = {happyNewYearCongratulationText
                         , happyNewYearCongratulationTextSecondVariant};
+                String[] happyNewYearCongratulationArrayIfChangeText = {happyNewYearCongratulationIfChangeText
+                ,happyNewYearCongratulationIfChangeTextSecond};
 
                 String[] eightOfMarchCongratulationArray = {eightOfMarchCongratulationText
                         , eightOfMarchCongratulationTextSecondVariant};
@@ -673,10 +678,10 @@ public class AutomationTextGenerationMain {
                                     JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
 
                             if (code == JOptionPane.YES_OPTION) {
-                                List<String[]> secondCongratulationsList = new ArrayList<>();
-                                secondCongratulationsList.add(secondCongratulationArray);
+                                List<String[]> happyNewYearComgratulationIfChageText = new ArrayList<>();
+                                happyNewYearComgratulationIfChageText.add(happyNewYearCongratulationArrayIfChangeText);
 
-                                for (String[] currentArray2 : secondCongratulationsList) {
+                                for (String[] currentArray2 : happyNewYearComgratulationIfChageText) {
 
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
