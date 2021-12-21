@@ -142,10 +142,10 @@ public class AutomationTextGenerationMain {
                         + "we congratulate you with a " + getSelectedHoliday + exclamationMark;
 
                 String happyNewYearCongratulationText = "We wish you a Merry Christmas and a Happy New Year" + exclamationMark;
-                String happyNewYearCongratulationTextSecondVariant = "We wish you dreams to come true in a "+ getSelectedHoliday + exclamationMark;
+                String happyNewYearCongratulationTextSecondVariant = "We wish you dreams to come true in a " + getSelectedHoliday + exclamationMark;
 
                 String happyNewYearCongratulationIfChangeText = "We wish you all the best in a " + getSelectedHoliday + exclamationMark;
-                String happyNewYearCongratulationIfChangeTextSecond = "We wish you a "+ getSelectedHoliday + exclamationMark;
+                String happyNewYearCongratulationIfChangeTextSecond = "We wish you a " + getSelectedHoliday + exclamationMark;
 
                 String eightOfMarchCongratulationText = dear + " " + getSelectedMemberOfFamily + " " + comma
                         + "we wish you to be pretty, as always, at " + getSelectedHoliday + exclamationMark;
@@ -157,6 +157,25 @@ public class AutomationTextGenerationMain {
                 String eightOfMarchCongratulationIfChangeTextSecondVariant = dear + " " + getSelectedMemberOfFamily + " " + comma
                         + "we congratulate you with " + getSelectedHoliday + exclamationMark;
 
+                String eightOfMarchGenerationForNoReceiver = "We wish you to be pretty, as always, at "
+                        + getSelectedHoliday + exclamationMark;
+                String eightOfMarchGenerationForNoReceiverSecondVariant = "We wish you to be awesome, as always, at "
+                        + getSelectedHoliday + exclamationMark;
+
+                String eightOfMarchGenerationForNoReceiverIfChange = "We wish you dreams to come true at "
+                        + getSelectedHoliday + exclamationMark;
+                String eightOfMarchGenerationForNoReceiverIfChangeSecondVariant = "We congratulate you with "
+                        + getSelectedHoliday + exclamationMark;
+
+                String happyBirthdayForNoReceiver = "We wish you a " + getSelectedHoliday + exclamationMark;
+                String happyBirthdayForNoReceiverSecondVariant = "We wish you to be a millionaire in a "
+                        + getSelectedHoliday + exclamationMark;
+
+                String happyBirthdayForNoReceiverIfChange = "We wish you all the best in a "
+                        + getSelectedHoliday + exclamationMark;
+                String happyBirthdayForNoReceiverIfChangeSecondVariant = "We congratulate you with a "
+                        + getSelectedHoliday + exclamationMark;
+
 
                 String[] firstCongratulationArray = {firstCongratulation, secondCongratulation};
 
@@ -165,12 +184,22 @@ public class AutomationTextGenerationMain {
                 String[] happyNewYearCongratulationArray = {happyNewYearCongratulationText
                         , happyNewYearCongratulationTextSecondVariant};
                 String[] happyNewYearCongratulationArrayIfChangeText = {happyNewYearCongratulationIfChangeText
-                ,happyNewYearCongratulationIfChangeTextSecond};
+                        , happyNewYearCongratulationIfChangeTextSecond};
 
                 String[] eightOfMarchCongratulationArray = {eightOfMarchCongratulationText
                         , eightOfMarchCongratulationTextSecondVariant};
                 String[] eightOfMarchCongratulationArraySecondVariant = {eightOfMarchCongratulationIfChangeText
                         , eightOfMarchCongratulationIfChangeTextSecondVariant};
+
+                String[] eightOfMarchCongratulationArrayForNoReceiver = {eightOfMarchGenerationForNoReceiver
+                        , eightOfMarchGenerationForNoReceiverSecondVariant};
+                String[] eightOfMarchCongratulationArrayForNoReceiverIfChange = {eightOfMarchGenerationForNoReceiverIfChange
+                        , eightOfMarchGenerationForNoReceiverIfChangeSecondVariant};
+
+                String[] hbForNoReceiver = {happyBirthdayForNoReceiver
+                        , happyBirthdayForNoReceiverSecondVariant};
+                String[] hbForNoReceiverSecondArray = {happyBirthdayForNoReceiverIfChange
+                        , happyBirthdayForNoReceiverIfChangeSecondVariant};
 
 
                 ImageIcon icon = new ImageIcon("C:\\Users\\12.png");
@@ -693,6 +722,79 @@ public class AutomationTextGenerationMain {
                             }
 
                         }
+                    }
+                } else if (getSelectedHoliday.equals("The 8th of March")) {
+                    if (getSelectedMemberOfFamily.equals("Choose receiver")) {
+
+
+                        List<String[]> eightOfMarchCongratulationsList = new ArrayList<>();
+                        eightOfMarchCongratulationsList.add(eightOfMarchCongratulationArrayForNoReceiver);
+
+                        for (String[] currentArray : eightOfMarchCongratulationsList) {
+
+                            String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
+
+                            int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+
+                            if (code == JOptionPane.YES_OPTION) {
+                                List<String[]> eightOfMarchCongratulationIfChangeTextForNoReceiver = new ArrayList<>();
+                                eightOfMarchCongratulationIfChangeTextForNoReceiver.add(eightOfMarchCongratulationArrayForNoReceiverIfChange);
+
+                                for (String[] currentArray2 : eightOfMarchCongratulationIfChangeTextForNoReceiver) {
+
+                                    String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
+
+                                    JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                }
+                            } else if (code == JOptionPane.NO_OPTION) {
+                                JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
+                            }
+
+                        }
+                    }
+
+
+                } else if (getSelectedHoliday.equals("Happy Birthday")) {
+                    if (getSelectedMemberOfFamily.equals("Choose receiver")) {
+
+
+                        List<String[]> birthdayCongratulationsList = new ArrayList<>();
+                        birthdayCongratulationsList.add(hbForNoReceiver);
+
+                        for (String[] currentArray : birthdayCongratulationsList) {
+
+                            String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
+
+                            int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+
+                            if (code == JOptionPane.YES_OPTION) {
+                                List<String[]> birthdayCongratulationIfChangeTextForNoReceiver = new ArrayList<>();
+                                birthdayCongratulationIfChangeTextForNoReceiver.add(hbForNoReceiverSecondArray);
+
+                                for (String[] currentArray2 : birthdayCongratulationIfChangeTextForNoReceiver) {
+
+                                    String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
+
+                                    JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                }
+                            } else if (code == JOptionPane.NO_OPTION) {
+                                JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
+                            }
+
+                        }
+                    }
+
+
+                } else if (getSelectedHoliday.equals("Choose holiday")) {
+                    if (getSelectedMemberOfFamily.equals("Choose receiver")) {
+                        JOptionPane.showMessageDialog(controllingFrame,
+                                "Wrong choice. Try again.",
+                                "Error Message",
+                                JOptionPane.ERROR_MESSAGE);
                     }
                 }
 
