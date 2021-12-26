@@ -202,13 +202,14 @@ public class AutomationTextGenerationMain {
                         , happyBirthdayForNoReceiverIfChangeSecondVariant};
 
 
-                ImageIcon icon = new ImageIcon("C:\\Users\\12.png");
-                ImageIcon icon1 = new ImageIcon("C:\\Users\\8.png");
-                ImageIcon icon2 = new ImageIcon("C:\\Users\\13.png");
-                ImageIcon icon3 = new ImageIcon("C:\\Users\\14.png");
-                ImageIcon icon4 = new ImageIcon("C:\\Users\\15.png");
-                ImageIcon icon5 = new ImageIcon("C:\\Users\\16.jpg");
-
+                ImageIcon birthdayIcon = new ImageIcon("images\\birthday.png");
+                ImageIcon birthdayIcon2 = new ImageIcon("images\\birthday2.png");
+                ImageIcon eightOfMarchIcon = new ImageIcon("images\\eightOfMarch.png");
+                ImageIcon eightOfMarchIcon2 = new ImageIcon("images\\eightOfMarch2.png");
+                ImageIcon newYearIcon = new ImageIcon("images\\happyNewYear.png");
+                ImageIcon newYearIcon2 = new ImageIcon("images\\happyNewYear2.png");
+                ImageIcon noReceiverIcon = new ImageIcon("images\\forNoReceiver.png");
+                ImageIcon noReceiverIcon2 = new ImageIcon("images\\forNoReceiver2.png");
 
                 if (getSelectedMemberOfFamily.equals("Mother")) {
                     if (getSelectedHoliday.equals("Happy Birthday")) {
@@ -221,7 +222,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
 
@@ -233,7 +234,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon3);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -249,7 +250,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon1);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, eightOfMarchIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
 
@@ -261,7 +262,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon5);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, eightOfMarchIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -278,7 +279,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
 
@@ -290,7 +291,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -316,7 +317,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
 
@@ -328,7 +329,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon3);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -346,7 +347,7 @@ public class AutomationTextGenerationMain {
 
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -357,7 +358,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -383,7 +384,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -394,7 +395,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon3);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -412,7 +413,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon);
 
 
                             if (code == JOptionPane.YES_OPTION) {
@@ -424,7 +425,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -450,7 +451,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -461,7 +462,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon3);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -478,7 +479,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon1);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, eightOfMarchIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> eightOfMarchSecondVariantCongratulationsList = new ArrayList<>();
@@ -490,7 +491,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon5);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, eightOfMarchIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -506,7 +507,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -517,7 +518,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -543,7 +544,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -555,7 +556,7 @@ public class AutomationTextGenerationMain {
 
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon3);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -572,7 +573,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon1);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, eightOfMarchIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> eightOfMarchSecondVariantCongratulationsList = new ArrayList<>();
@@ -583,7 +584,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon5);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, eightOfMarchIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -599,7 +600,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -610,7 +611,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -638,7 +639,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -649,7 +650,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon3);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, birthdayIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -666,7 +667,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> secondCongratulationsList = new ArrayList<>();
@@ -677,7 +678,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, newYearIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -704,7 +705,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, noReceiverIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> happyNewYearComgratulationIfChageText = new ArrayList<>();
@@ -715,7 +716,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, noReceiverIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -735,7 +736,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, noReceiverIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> eightOfMarchCongratulationIfChangeTextForNoReceiver = new ArrayList<>();
@@ -746,7 +747,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, noReceiverIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
@@ -768,7 +769,7 @@ public class AutomationTextGenerationMain {
                             String chosenString = currentArray[getRandomText.nextInt(currentArray.length)];
 
                             int code = JOptionPane.showConfirmDialog(null, chosenString, "Click yes if you want to change the card and no if you want to finish",
-                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon2);
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, noReceiverIcon);
 
                             if (code == JOptionPane.YES_OPTION) {
                                 List<String[]> birthdayCongratulationIfChangeTextForNoReceiver = new ArrayList<>();
@@ -779,7 +780,7 @@ public class AutomationTextGenerationMain {
                                     String chosenString2 = currentArray2[getRandomText.nextInt(currentArray2.length)];
 
                                     JOptionPane.showConfirmDialog(null, chosenString2, "YES - CHANGE TEXT / NO - FINISH",
-                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon4);
+                                            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, noReceiverIcon2);
                                 }
                             } else if (code == JOptionPane.NO_OPTION) {
                                 JOptionPane.showMessageDialog(null, "Good luck to you, I believe in you");
