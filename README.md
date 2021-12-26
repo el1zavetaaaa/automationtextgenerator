@@ -8,6 +8,7 @@ Happy New Year, The 8 of March and Happy Birthday;
 * get text, generated for no specific receiver.
 
 # UI of my project is
+There is how, actually, my project looks like.
 
 ![Product Name Screen Shot][product-ui]
 
