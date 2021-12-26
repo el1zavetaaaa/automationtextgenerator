@@ -9,4 +9,6 @@ Happy New Year, The 8 of March and Happy Birthday;
 
 # UI of my project is
 
-![Product Name Screen Shot][product-swaggerUI]
+![Product Name Screen Shot][product-ui]
+
+[product-ui]: images/ui.png
